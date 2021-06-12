@@ -1,12 +1,12 @@
 {
   "name": "instant8080",
   "description": "Creates files required for a node js web app",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "author": "GianniDev-gr",
   "bin": {
     "Instant8080": "./bin/run"
-  },
-  "bugs": "https://github.com/GianniDev/Instant8080/issues",
+  }, 
+  "bugs": "https://github.com/GianniDev-gr/instant8080/issues",
   "dependencies": {
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
@@ -28,7 +28,7 @@
     "/oclif.manifest.json",
     "/src"
   ],
-  "homepage": "https://github.com/GianniDev-gr/Instant8080-CLI",
+  "homepage": "https://github.com/GianniDev-gr/instant8080",
   "keywords": [
     "oclif"
   ],
@@ -36,12 +36,12 @@
   "main": "src/index.js",
   "oclif": {
     "commands": "./src/commands",
-    "bin": "Instant8080",
+    "bin": "instant8080",
     "plugins": [
       "@oclif/plugin-help"
     ]
   },
-  "repository": "https://github.com/GianniDev-gr/Instant8080-CLI",
+  "repository": "https://github.com/GianniDev-gr/instant8080",
   "scripts": {
     "postpack": "rimraf oclif.manifest.json",
     "posttest": "eslint .",

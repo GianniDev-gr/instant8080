@@ -6,7 +6,10 @@ class CreateWebAppCommand extends Command {
     const { flags } = this.parse(CreateWebAppCommand);
     const name = flags.name;
 
-    const indexjs = `const PORT = process.env.PORT || 8080;
+    const indexjs = `
+    //This project was made with instant8080
+    //Check the projects repository at
+    const PORT = process.env.PORT || 8080;
     const express = require('express');
     const app = express();
     
@@ -31,7 +34,7 @@ class CreateWebAppCommand extends Command {
     
     //Start server
     server.listen(PORT, function () {
-      console.log('Chat server running');
+      console.log('server running on port ' + PORT);
     });`;
     const gitignore = `node_modules/`;
     const Procfile = `web: node index.js`;
